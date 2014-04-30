@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.warungmak"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.warungmak.IkiSplash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.warungmak.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.PemesananMakanan"
+            android:label="@string/title_activity_pemesanan_makanan" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.KritikSaran"
+            android:label="@string/title_activity_kritik_saran" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.DaftarMakanan"
+            android:label="@string/title_activity_daftar_makanan" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.DaftarMinuman"
+            android:label="@string/title_activity_daftar_minuman" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.Gallery"
+            android:label="@string/title_activity_gallery" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.Alamat"
+            android:label="@string/title_activity_alamat" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.Setting"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.MenuFavorit"
+            android:label="@string/title_activity_menu_favorit" >
+        </activity>
+        <activity
+            android:name="com.example.warungmak.Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+</manifest>

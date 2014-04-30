@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PemesananMakanan"
+    android:background="#000000" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/order"
+        android:layout_centerVertical="true"
+        android:text="Alamat:"
+        style="@style/ikistyle" />
+
+    <EditText
+        android:id="@+id/order"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView1"
+        android:ems="10"
+        android:gravity="top"
+        style="@style/stylelagi" >
+        
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/order"
+        android:layout_alignLeft="@+id/textView4"
+        android:text="Order:"
+        style="@style/ikistyle" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Masukkan makanan minuman yang ingin anda pesan dan alamat anda"
+        style="@style/ikistyle" />
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        style="@style/stylelagi" >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/kirimorder"
+        android:layout_below="@+id/kirimorder"
+        android:layout_marginTop="26dp"
+        android:text="Nb: Hanya menerima order untuk wilayah Semarang"
+        style="@style/ikistyle" />
+
+    <Button
+        android:id="@+id/kirimorder"
+        style="@style/ikistyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alamat"
+        android:layout_below="@+id/alamat"
+        android:layout_marginTop="18dp"
+        android:text="Kirim" />
+
+</RelativeLayout>
